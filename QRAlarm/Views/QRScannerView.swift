@@ -15,7 +15,7 @@ struct QRScannerView: UIViewControllerRepresentable {
 
         func dataScanner(_ dataScanner: DataScannerViewController, didAdd addedItems: [RecognizedItem], allItems: [RecognizedItem]) {
             guard let item = addedItems.first else { return }
-            
+
             switch item {
             case .barcode(let barcode):
                 if let payload = barcode.payloadStringValue {
@@ -58,7 +58,7 @@ struct QRScannerView: UIViewControllerRepresentable {
             }
         }
     }
-    
+
     /// 確認設備是否支援掃描器
     static var isSupported: Bool {
         DataScannerViewController.isSupported && DataScannerViewController.isAvailable

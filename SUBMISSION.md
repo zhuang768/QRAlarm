@@ -19,27 +19,27 @@ Also test RevenueCat's **Cancel** and **Failure** outcomes before Success. Both 
 
 ## Two-minute English demo script
 
-**0:00–0:15 — Problem**  
+**0:00–0:15 — Problem**
 “I am a 16-year-old student, and I built QRAlarm because dismissing an alarm is too easy when you are half asleep. QRAlarm makes waking up an action, not just a tap.”
 
-**0:15–0:35 — Free app**  
-Show the alarm list and create a repeating alarm.  
+**0:15–0:35 — Free app**
+Show the alarm list and create a repeating alarm.
 “The free app supports one-time and repeating alarms, labels, snooze, and real local-notification scheduling on iOS 17 and later.”
 
-**0:35–1:05 — RevenueCat purchase**  
-Tap **GO PRO**, briefly show the paywall, then buy and choose Success in the Test Store modal.  
+**0:35–1:05 — RevenueCat purchase**
+Tap **GO PRO**, briefly show the paywall, then buy and choose Success in the Test Store modal.
 “QR Wake Mission is unlocked by the `qralarm_pro` entitlement. This purchase is handled by the RevenueCat SDK and Test Store, so no real money or App Store product is needed. CustomerInfo is the source of truth, and restore purchases is built in.”
 
-**1:05–1:35 — Pro setup**  
-Edit an alarm, enable QR unlock, and scan a QR code placed across the room.  
+**1:05–1:35 — Pro setup**
+Edit an alarm, enable QR unlock, and scan a QR code placed across the room.
 “Pro users save a specific target code. QRAlarm stores the target locally and requires an exact match.”
 
-**1:35–1:52 — Payoff**  
-Tap **TEST QR WAKE-UP**, scan a wrong code, then the correct code.  
+**1:35–1:52 — Payoff**
+Tap **TEST QR WAKE-UP**, scan a wrong code, then the correct code.
 “A random QR code is rejected. The saved code stops the alarm, proving I got out of bed.”
 
-**1:52–2:00 — Close**  
-Show **PRO ✓** and Restore Purchases.  
+**1:52–2:00 — Close**
+Show **PRO ✓** and Restore Purchases.
 “QRAlarm is open source, tested on iPhone, and built by a student for students. Thank you.”
 
 ## Before submitting

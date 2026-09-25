@@ -16,7 +16,7 @@ struct Provider: TimelineProvider {
         let timeline = Timeline(entries: [entry], policy: .atEnd)
         completion(timeline)
     }
-    
+
     private func fetchNextAlarm() -> AlarmItem? {
         guard let data = UserDefaults(suiteName: "group.com.qralarm.app")?.data(forKey: "com.qralarm.alarms"),
               let alarms = try? JSONDecoder().decode([AlarmItem].self, from: data) else {
@@ -27,7 +27,7 @@ struct Provider: TimelineProvider {
             return $0.minute < $1.minute
         }.first
     }
-    
+
     private func mockAlarm() -> AlarmItem {
         AlarmItem(hour: 7, minute: 30, label: "起床囉", isEnabled: true)
     }
@@ -49,14 +49,14 @@ struct QRAlarmWidgetEntryView : View {
                         Text(alarm.label)
                             .font(.system(size: 14, weight: .medium))
                             .foregroundStyle(.secondary)
-                        
+
                         Text(String(format: "%d:%02d", alarm.hour12, alarm.minute))
                             .font(.system(size: 36, weight: .light, design: .rounded))
                             .foregroundStyle(alarm.isEnabled ? .primary : .secondary)
                     }
-                    
+
                     Spacer()
-                    
+
                     Button(intent: ToggleAlarmIntent(alarmID: alarm.id.uuidString, isEnabled: !alarm.isEnabled)) {
                         Image(systemName: alarm.isEnabled ? "bell.fill" : "bell.slash")
                             .font(.title2)
