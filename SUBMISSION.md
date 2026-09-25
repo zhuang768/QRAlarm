@@ -46,12 +46,16 @@ Show **PRO ✓** and Restore Purchases.
 
 - [x] Configure the Debug build with a RevenueCat Test Store public SDK key.
 - [x] Complete the `monthly` product → `qralarm_pro` entitlement → current Offering setup.
+- [x] Prepare the 1024 × 1024 icon and frame-free simulator screenshots in `submission-assets/`.
+- [x] Record a 60-second silent draft showing the real paywall, Test Store modal, and cancellation behavior.
 - [ ] Record a successful purchase and verify it in RevenueCat sandbox data.
 - [ ] Run the full test list in `README.md` on a camera-enabled iPhone.
 - [ ] Keep the final English video at or below two minutes and make it publicly viewable.
-- [ ] Publish this source repository publicly with `LICENSE` included.
+- [x] Publish this source repository publicly with `LICENSE` included.
 - [ ] Submit using the student's school email address.
 - [ ] Obtain and retain parent or guardian consent required for a 16-year-old entrant.
 - [ ] Recheck the official rules and submit before the deadline in Taiwan time.
 
 Do not publish an App Store build that contains the RevenueCat Test Store key.
+
+The draft video is intentionally incomplete: it cancels the Test Store purchase and does not demonstrate camera scanning. See `submission-assets/README.md` for exact file specifications and the remaining final-video checklist.
