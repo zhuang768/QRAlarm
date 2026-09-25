@@ -54,7 +54,7 @@ struct AddAlarmView: View {
             var c = DateComponents()
             c.hour = alarm.hour; c.minute = alarm.minute
             _selectedTime = State(initialValue: Calendar.current.date(from: c) ?? Date())
-            _label = State(initialValue: alarm.label == "鬧鐘" ? "" : alarm.label)
+            _label = State(initialValue: ["Alarm", "\u{9B27}\u{9418}"].contains(alarm.label) ? "" : alarm.label)
             _repeatDays = State(initialValue: alarm.repeatDays)
             _requiresQRCode = State(initialValue: alarm.requiresQRCode)
             _qrCodeContent = State(initialValue: alarm.qrCodeContent)
@@ -138,7 +138,7 @@ struct AddAlarmView: View {
                         .foregroundStyle(DS.Color.secondary)
                         .tracking(1)
                     Spacer()
-                    TextField("鬧鐘", text: $label)
+                    TextField("Alarm", text: $label)
                         .multilineTextAlignment(.trailing)
                         .foregroundStyle(DS.Color.primary)
                         .font(DS.Font.body)
@@ -320,7 +320,7 @@ struct AddAlarmView: View {
             id: originalID ?? UUID(),
             hour: c.hour ?? 7,
             minute: c.minute ?? 0,
-            label: label.isEmpty ? "鬧鐘" : label,
+            label: label.isEmpty ? "Alarm" : label,
             repeatDays: repeatDays,
             isEnabled: originalIsEnabled,
             requiresQRCode: requiresQRCode && qrCodeContent != nil,

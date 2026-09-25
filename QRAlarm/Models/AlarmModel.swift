@@ -20,19 +20,19 @@ struct WeekdaySet: OptionSet, Codable, Hashable {
     static let everyday: WeekdaySet = [.sunday, .monday, .tuesday, .wednesday, .thursday, .friday, .saturday]
 
     var displayText: String {
-        if self == .everyday { return "每天" }
-        if self == .weekdays { return "週一至五" }
-        if self == .weekends { return "週末" }
-        if self.isEmpty { return "只響一次" }
+        if self == .everyday { return "Every day" }
+        if self == .weekdays { return "Monday to Friday" }
+        if self == .weekends { return "Weekends" }
+        if self.isEmpty { return "Once" }
 
-        let days = ["日", "一", "二", "三", "四", "五", "六"]
+        let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
         var result: [String] = []
         for i in 0..<7 {
             if self.contains(WeekdaySet(rawValue: 1 << i)) {
-                result.append("週" + days[i])
+                result.append(days[i])
             }
         }
-        return result.joined(separator: "、")
+        return result.joined(separator: ", ")
     }
 
     var alarmKitWeekdays: [Int] {
@@ -62,7 +62,7 @@ struct AlarmItem: Identifiable, Codable, Hashable {
         id: UUID = UUID(),
         hour: Int,
         minute: Int,
-        label: String = "鬧鐘",
+        label: String = "Alarm",
         repeatDays: WeekdaySet = [],
         isEnabled: Bool = true,
         requiresQRCode: Bool = false,

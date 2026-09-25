@@ -29,7 +29,7 @@ struct Provider: TimelineProvider {
     }
 
     private func mockAlarm() -> AlarmItem {
-        AlarmItem(hour: 7, minute: 30, label: "起床囉", isEnabled: true)
+        AlarmItem(hour: 7, minute: 30, label: "Wake Up", isEnabled: true)
     }
 }
 
@@ -70,7 +70,7 @@ struct QRAlarmWidgetEntryView : View {
                     .buttonStyle(.plain)
                 }
             } else {
-                Text("尚未設定鬧鐘")
+                Text("No alarms set")
                     .font(.headline)
                     .foregroundStyle(.secondary)
             }
@@ -88,8 +88,8 @@ struct QRAlarmWidget: Widget {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             QRAlarmWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("最近的鬧鐘")
-        .description("在桌面上快速查看並開關下一個鬧鐘。")
+        .configurationDisplayName("Next Alarm")
+        .description("View and toggle your next alarm from the Home Screen.")
         .supportedFamilies([.systemSmall, .systemMedium])
     }
 }

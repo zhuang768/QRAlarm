@@ -266,7 +266,7 @@ struct AlarmCard: View {
 
                     // 標籤行
                     HStack(spacing: 10) {
-                        if alarm.label != "鬧鐘" && !alarm.label.isEmpty {
+                        if alarm.label != "Alarm" && alarm.label != "\u{9B27}\u{9418}" && !alarm.label.isEmpty {
                             Text(alarm.label.uppercased())
                                 .font(DS.Font.tag)
                                 .foregroundStyle(alarm.isEnabled ? DS.Color.secondary : DS.Color.disabled)
@@ -348,11 +348,11 @@ struct EmptyAlarmView: View {
                     .foregroundStyle(DS.Color.secondary)
                     .tracking(3)
 
-                Text("還沒有任何鬧鐘")
+                Text("You don't have any alarms yet.")
                     .font(DS.Font.body)
                     .foregroundStyle(DS.Color.disabled)
 
-                Text("長按右上角 + 快速新增")
+                Text("Hold + to quick add")
                     .font(DS.Font.tag)
                     .foregroundStyle(DS.Color.accent)
                     .tracking(1)
@@ -433,7 +433,7 @@ struct QuickAddView: View {
                     .foregroundStyle(DS.Color.secondary)
                     .tracking(3)
                 Spacer()
-                Button("取消") { dismiss() }
+                Button("CANCEL") { dismiss() }
                     .font(DS.Font.body)
                     .foregroundStyle(DS.Color.secondary)
             }
@@ -454,14 +454,14 @@ struct QuickAddView: View {
                 let alarm = AlarmItem(
                     hour: comps.hour ?? 7,
                     minute: comps.minute ?? 0,
-                    label: "鬧鐘",
+                    label: "Alarm",
                     repeatDays: [],
                     isEnabled: true
                 )
                 onSave(alarm)
                 dismiss()
             } label: {
-                Text("設定鬧鐘")
+                Text("SET ALARM")
                     .font(DS.Font.button)
                     .foregroundStyle(.white)
                     .frame(maxWidth: .infinity)

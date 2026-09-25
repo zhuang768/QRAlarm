@@ -3,7 +3,7 @@ import Foundation
 import WidgetKit
 
 struct ToggleAlarmIntent: AppIntent {
-    static var title: LocalizedStringResource = "切換鬧鐘狀態"
+    static var title: LocalizedStringResource = "Toggle Alarm"
 
     @Parameter(title: "Alarm ID")
     var alarmID: String
