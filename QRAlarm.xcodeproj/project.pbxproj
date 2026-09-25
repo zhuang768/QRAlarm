@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A001 /* QRAlarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001 /* QRAlarmApp.swift */; };
+		A002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002 /* ContentView.swift */; };
+		A003 /* AlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F003 /* AlarmModel.swift */; };
+		A004 /* AlarmManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F004 /* AlarmManagerService.swift */; };
+		A005 /* AlarmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F005 /* AlarmListView.swift */; };
+		A006 /* AddAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F006 /* AddAlarmView.swift */; };
+		A011 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011 /* QRScannerView.swift */; };
+		A007 /* RingingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F007 /* RingingView.swift */; };
+		A008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F008 /* Assets.xcassets */; };
+		A009 /* AlarmPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F009 /* AlarmPresentation.swift */; };
+		A012 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F012 /* DesignSystem.swift */; };
+		A010 /* AlarmStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F010 /* AlarmStore.swift */; };
+		A013 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F013 /* PurchaseManager.swift */; };
+		A014 /* ProPaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F014 /* ProPaywallView.swift */; };
+		A015 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = PKGPROD1 /* RevenueCat */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F001 /* QRAlarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRAlarmApp.swift; sourceTree = "<group>"; };
+		F002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F003 /* AlarmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmModel.swift; sourceTree = "<group>"; };
+		F004 /* AlarmManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmManagerService.swift; sourceTree = "<group>"; };
+		F005 /* AlarmListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListView.swift; sourceTree = "<group>"; };
+		F006 /* AddAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmView.swift; sourceTree = "<group>"; };
+		F011 /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
+		F007 /* RingingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingingView.swift; sourceTree = "<group>"; };
+		F008 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F009 /* AlarmPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmPresentation.swift; sourceTree = "<group>"; };
+		F012 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		F010 /* AlarmStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmStore.swift; sourceTree = "<group>"; };
+		FAPP /* QRAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FENT /* QRAlarm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QRAlarm.entitlements; sourceTree = "<group>"; };
+		FINFO /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F013 /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
+		F014 /* ProPaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProPaywallView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFWK /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A015 /* RevenueCat in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		GMAIN /* QRAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				F001 /* QRAlarmApp.swift */,
+				F002 /* ContentView.swift */,
+				F010 /* AlarmStore.swift */,
+				F009 /* AlarmPresentation.swift */,
+				F012 /* DesignSystem.swift */,
+				F013 /* PurchaseManager.swift */,
+				GMODELS /* Models */,
+				GMANAGERS /* Managers */,
+				GVIEWS /* Views */,
+				F008 /* Assets.xcassets */,
+				FENT /* QRAlarm.entitlements */,
+				FINFO /* Info.plist */,
+			);
+			path = QRAlarm;
+			sourceTree = "<group>";
+		};
+		GMANAGERS /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F004 /* AlarmManagerService.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		GMODELS /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F003 /* AlarmModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		GPROD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAPP /* QRAlarm.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		GROOT = {
+			isa = PBXGroup;
+			children = (
+				GMAIN /* QRAlarm */,
+				GPROD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		GVIEWS /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F005 /* AlarmListView.swift */,
+				F006 /* AddAlarmView.swift */,
+				F011 /* QRScannerView.swift */,
+				F007 /* RingingView.swift */,
+				F014 /* ProPaywallView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BTGT /* QRAlarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCCL /* Build configuration list for PBXNativeTarget "QRAlarm" */;
+			buildPhases = (
+				BSRC /* Sources */,
+				BFWK /* Frameworks */,
+				BRES /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QRAlarm;
+			packageProductDependencies = (
+				PKGPROD1 /* RevenueCat */,
+			);
+			productName = QRAlarm;
+			productReference = FAPP /* QRAlarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BPRJ /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					BTGT = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = BCCL_PROJ /* Build configuration list for PBXProject "QRAlarm" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = GROOT;
+			productRefGroup = GPROD /* Products */;
+			packageReferences = (
+				PKGREF1 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BTGT /* QRAlarm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BRES /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A008 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BSRC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A001 /* QRAlarmApp.swift in Sources */,
+				A002 /* ContentView.swift in Sources */,
+				A003 /* AlarmModel.swift in Sources */,
+				A004 /* AlarmManagerService.swift in Sources */,
+				A005 /* AlarmListView.swift in Sources */,
+				A006 /* AddAlarmView.swift in Sources */,
+				A011 /* QRScannerView.swift in Sources */,
+				A007 /* RingingView.swift in Sources */,
+				A009 /* AlarmPresentation.swift in Sources */,
+				A012 /* DesignSystem.swift in Sources */,
+				A010 /* AlarmStore.swift in Sources */,
+				A013 /* PurchaseManager.swift in Sources */,
+				A014 /* ProPaywallView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BCDBG /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCREL /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BCTDBG /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = QRAlarm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qralarm.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REVENUECAT_API_KEY = test_AJXAHlWbqHOZFInhodukJIbPdEz;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BCTREL /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = QRAlarm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qralarm.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REVENUECAT_API_KEY = "";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCCL /* Build configuration list for PBXNativeTarget "QRAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCTDBG /* Debug */,
+				BCTREL /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCCL_PROJ /* Build configuration list for PBXProject "QRAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCDBG /* Debug */,
+				BCREL /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		PKGREF1 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.43.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		PKGPROD1 /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = PKGREF1 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
+			productName = RevenueCat;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BPRJ /* Project object */;
+}
